@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Gas Calc</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Titillium+Web:wght@300;400;600;900&display=swap" rel="stylesheet"> 
+    </head>
+    <body>
+        <div class="mainTitle">
+            <p>Cálculo do consumo de gasolina</p>
+        </div>
+        <div class="container">
+            <div>
+                <label for="price">Preço da gasolina</label>
+                <input type="number" id="price" value="0">
+            </div>
+            <div>
+                <label for="consume">Consumo do veículo</label>
+                <input type="number" id="consume" value="0">
+            </div>
+            <div>
+                <label for="distance">Km rodados</label>
+                <input type="number" id="distance" value="0">
+            </div>
+            <button class="btn" onclick="calculate()">Calcular</button>
+            <section class="mainInputs">
+                <div>
+                    <label for="litersConsume">Litros gastos</label>
+                    <input type="text" id="litersConsume" value="0" readonly>
+                </div>
+                <div>
+                    <label for="totalPrice">Valor Total</label>
+                    <input type="text" id="totalPrice" value="0" readonly>
+                </div>
+            </section>            
+        </div>        
+    </body>
+	<script src="script.js"></script>
+</html>
