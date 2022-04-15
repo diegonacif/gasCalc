@@ -1,5 +1,5 @@
 function roundToTwo(num) {    
-  return +(Math.round(num + "e+2")  + "e-2");;
+  return +(Math.round(num + "e+2")  + "e-2");
 };
 
 function calculate () {
@@ -19,8 +19,7 @@ function calculate () {
   } else {
     return (      
       litersInput.value = roundToTwo(liters),
-      totalInput.value = roundToTwo(total),
-      console.log(total, liters)  
+      totalInput.value = roundToTwo(total)
     )
   }
   
